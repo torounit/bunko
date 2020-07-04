@@ -6,11 +6,11 @@
         "https://downloads.wordpress.org/plugin/gutenberg.zip"
     ],
     "themes": [
-        "./wp-content/themes/boilerplate"
+        "./wp-content/themes/bunko"
     ],
     "mapping": {
         "wp-content/mu-plugins": "./wp-content/mu-plugins"
     },
-    "port": 8080,
-    "testsPort": 8081
+    "port": 18080,
+    "testsPort": 18081
 }

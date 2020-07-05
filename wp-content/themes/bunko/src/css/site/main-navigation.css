@@ -1,0 +1,32 @@
+.main-navigation {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+
+.main-navigation ul {
+	display: none;
+}
+
+.main-navigation ul ul {
+	display: block;
+}
+
+.main-navigation ul[aria-expanded="true"] {
+	display: block;
+}
+
+
+.main-navigation li {
+	position: relative;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+.menu-toggle {
+	padding: 1em;
+}

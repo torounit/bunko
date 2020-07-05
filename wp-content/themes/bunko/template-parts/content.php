@@ -49,8 +49,7 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><
-
+	</div>
 	<footer class="entry__footer">
 		<?php bunko_entry_footer(); ?>
 	</footer>

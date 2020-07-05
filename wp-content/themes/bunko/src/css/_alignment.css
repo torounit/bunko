@@ -23,27 +23,29 @@
 }
 
 /* Full */
-
+.wp-block[data-align="full"],
 .alignfull {
-	margin-top: 5rem;
-	margin-right: auto;
-	margin-bottom: 5rem;
-	margin-left: auto;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	width: auto;
 	max-width: 100vw;
-	position: relative;
-	width: 100%;
 }
+
 
 [class*="__inner-container"] > .alignfull {
 	max-width: 100%;
 }
 
 /* Wide */
-
+.wp-block[data-align="wide"],
 .alignwide {
-	max-width: 120rem;
+	--margin-horizontal: max(calc( 50% - var(--content-wide-width) / 2 ), calc(50% - 50vw));
+	max-width: 100vw;
 	position: relative;
-	width: calc(100% - 4rem);
+	margin-left: var(--margin-horizontal);
+	margin-right: var(--margin-horizontal);
+	width: var(--content-wide-width);
+
 }
 
 [class*="__inner-container"] > .alignwide {

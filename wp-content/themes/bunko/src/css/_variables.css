@@ -1,10 +1,12 @@
 @custom-media --window-small (max-width: 600px);
-@custom-media --window-medium (min-width: 768px);
+@custom-media --window-medium (min-width: 783px);
 @custom-media --window-large (min-width: 1080px);
 
 :root {
+	--wp--preset--font-size--normal: 16px;
 	--color-white: #fff;
 	--color-black: #333;
-	--content-width: 748px;
-	--site-max-width: 1080px;
+	--content-width: 1000px;
+	--content-wide-width: 1200px;
+	--content-gutter: 2rem;
 }

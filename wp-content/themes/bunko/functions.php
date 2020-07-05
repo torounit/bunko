@@ -68,12 +68,18 @@ function bunko_content_width() {
 
 add_action( 'after_setup_theme', 'bunko_content_width', 0 );
 
+add_action( 'wp_head', function () {
+	?>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<?php
+} );
+
 /**
  * Enqueue scripts and styles.
  */
 function bunko_scripts() {
+	wp_enqueue_style( 'bunko-google-fonts', 'https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap' );
 	wp_enqueue_style( 'bunko-style', get_template_directory_uri() . '/build/style-index.css' );
-
 	if ( file_exists( dirname( __FILE__ ) . '/build/index.asset.php' ) ) {
 		$asset_file = include( dirname( __FILE__ ) . '/build/index.asset.php' );
 		wp_enqueue_script(

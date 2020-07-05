@@ -1,0 +1,6 @@
+.site {
+	margin: auto;
+	max-width: var(--content-width);
+	padding-left: var(--content-gutter);
+	padding-right: var(--content-gutter);
+}

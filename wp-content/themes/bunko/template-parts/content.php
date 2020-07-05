@@ -9,27 +9,27 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry' ); ?>>
+	<header class="entry__header">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="entry__title">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			if ( has_post_thumbnail() ) :
 				the_post_thumbnail();
 			endif;
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
+		<div class="entry__meta">
 			<?php bunko_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		</div><!-- .entry__meta -->
 		<?php
 		endif; ?>
-	</header><!-- .entry-header -->
+	</header>
 
-	<div class="entry-content">
+	<div class="entry__content">
 		<?php
 			the_content( sprintf(
 				wp_kses(
@@ -49,9 +49,9 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div><
 
-	<footer class="entry-footer">
+	<footer class="entry__footer">
 		<?php bunko_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+	</footer>
+</article>

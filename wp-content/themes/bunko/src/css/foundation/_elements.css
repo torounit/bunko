@@ -124,13 +124,14 @@ object {
 }
 
 a {
-	text-decoration: none;
+	color: var(--color-black);
+	text-decoration: underline;
 }
 
 a:hover,
 a:focus,
 a:active {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:focus {

@@ -11,11 +11,10 @@
 .alignleft,
 .alignright,
 .alignwide {
-	margin-top: 4rem;
-	margin-right: auto;
-	margin-bottom: 4rem;
-	margin-left: auto;
+	margin: 1rem auto;
 }
+
+
 
 [class*="__inner-container"] > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright) {
 	margin-left: auto;
@@ -68,17 +67,15 @@
 }
 
 .alignleft {
-
 	/*rtl:ignore*/
 	float: left;
-	margin: 0.3rem 2rem 2rem 2rem;
+	margin: .5rem 2rem .5rem 0;
 }
 
 .alignright {
-
 	/*rtl:ignore*/
 	float: right;
-	margin: 0.3rem 2rem 2rem 2rem;
+	margin: .5rem 0 5rem 2rem;
 }
 
 [class*="wp-block"].alignfull:not(.has-background) [class*="__inner-container"] > .alignleft,

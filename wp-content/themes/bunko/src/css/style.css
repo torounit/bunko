@@ -8,6 +8,7 @@
 
 @import "module/entry.css";
 
+@import "blocks/columns.css";
 @import "blocks/embed.css";
 @import "blocks/button.css";
 @import "blocks/cover.css";

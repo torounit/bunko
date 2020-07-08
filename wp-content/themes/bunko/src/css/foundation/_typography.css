@@ -7,7 +7,7 @@ html {
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-font-smoothing: antialiased;
-	font-size: var(--wp--preset--font-size--normal);
+	font-size: calc(1px * var(--wp--preset--font-size--normal));
 	font-family: Noto Sans JP, Noto Sans Japanese, Noto Sans, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "YuGothic", "Yu Gotic", Meiryo, sans-serif;
 	line-height: 2;
 	letter-spacing: 0.05em;

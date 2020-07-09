@@ -1,3 +1,17 @@
 .wp-block-cover {
 	color: var(--color-white);
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.wp-block-cover.aligncenter,
+.wp-block-cover.alignnone,
+.wp-block-cover.alignwide {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.wp-block-cover.alignfull {
+	margin-top: 4em;
+	margin-bottom: 4em;
 }

@@ -1,3 +1,7 @@
+.wp-block-columns {
+	margin-bottom: 0;
+}
+
 .wp-block-columns.alignfull,
 .alignfull:not(.has-background) .wp-block-columns,
 [data-align="full"] > .wp-block-columns {

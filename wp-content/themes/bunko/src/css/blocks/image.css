@@ -1,0 +1,16 @@
+.wp-block-image {
+}
+
+.wp-block-image img {
+	display: block;
+}
+
+.wp-block-image.alignwide {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.wp-block-image.alignfull {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}

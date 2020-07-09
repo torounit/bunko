@@ -9,7 +9,9 @@
 @import "module/entry.css";
 
 @import "blocks/columns.css";
+@import "blocks/image.css";
 @import "blocks/embed.css";
+@import "blocks/gallery.css";
 @import "blocks/button.css";
 @import "blocks/cover.css";
 @import "_accessibility.css";

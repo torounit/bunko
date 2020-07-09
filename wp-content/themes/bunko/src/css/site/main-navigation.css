@@ -4,7 +4,6 @@
 	margin: 0 auto;
 }
 
-
 .main-navigation ul {
 	display: none;
 }
@@ -25,4 +24,8 @@
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+}
+
+.main-navigation .menu-toggle {
+
 }

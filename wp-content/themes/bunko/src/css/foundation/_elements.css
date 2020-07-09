@@ -107,14 +107,45 @@ input {
 # Forms
 --------------------------------------------------------------*/
 
-
-select {
+html body select {
 	border: 1px solid #ccc;
 }
 
-textarea {
-	width: 100%;
+html body input {
+	border-width: 2px;
+	border-style: solid;
+	border-color: currentColor;
+	padding: calc(.5em - 2px) calc(.5em - 2px);
+	border-radius: 0;
+	line-height: 2;
 }
+
+html body textarea {
+	line-height: 1.5;
+	width: 100%;
+	display: block;
+	border-width: 2px;
+	border-style: solid;
+	border-color: currentColor;
+	padding: calc(1em - 2px);
+	border-radius: 0;
+}
+
+/* ignore in editor */
+html body [type=button],
+html body [type=reset],
+html body [type=submit],
+html body button {
+	padding: calc( 1rem - 2px ) calc( 2rem - 2px );
+	font-size: 1rem;
+	line-height: 2;
+	border-radius: 0;
+	background-color: transparent;
+	border-width: 2px;
+	border-style: solid;
+	border-color: currentColor;
+}
+
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
@@ -152,27 +183,3 @@ hr {
 blockquote {
 
 }
-
-button {
-	padding: calc( 1rem - 2px );
-	font-size: 1rem;
-	line-height: 2;
-}
-
-/*
-body {
-	background-image:
-		linear-gradient(
-			transparent 95%,
-			rgba(0, 0, 0, .2) 5%
-		),
-		linear-gradient(
-			90deg,
-			transparent 95%,
-			rgba(0, 0, 0, .2) 5%
-		);
-	background-size: 16px 16px;
-	background-repeat: repeat;
-	background-position: center top;
-}
-*/

@@ -96,7 +96,15 @@ var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
-p > * {
+
+p > a,
+p > code,
+p > strong,
+p > em,
+p > code,
+p > kbd,
+p > tt,
+p > var {
 	line-height: 1.75; /* fix line-height */
 }
 
@@ -124,3 +132,20 @@ big {
 	line-height: 1;
 }
 
+
+
+body {
+	background-image:
+		linear-gradient(
+			transparent 95%,
+			rgba(0, 0, 0, .2) 5%
+		),
+		linear-gradient(
+			90deg,
+			transparent 95%,
+			rgba(0, 0, 0, .2) 5%
+		);
+	background-size: 16px 16px;
+	background-repeat: repeat;
+	background-position: center top;
+}

@@ -8,7 +8,9 @@
 
 @import "module/entry.css";
 @import "module/post-navigation.css";
+@import "module/comment-form.css";
 
+@import "blocks/group.css";
 @import "blocks/columns.css";
 @import "blocks/image.css";
 @import "blocks/embed.css";

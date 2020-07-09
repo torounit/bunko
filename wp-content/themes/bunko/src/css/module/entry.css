@@ -5,4 +5,5 @@
 .entry__content::after {
 	display: table;
 	clear: both;
+	content: "";
 }

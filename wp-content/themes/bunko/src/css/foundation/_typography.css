@@ -33,27 +33,36 @@ h6 {
 
 
 h1 {
+	font-size: 3rem;
+	margin: 1.5rem 0;
 }
 
 
 h2 {
-
+	font-size: 2rem;
+	margin: 1rem 0;
 }
 
 h3 {
-
+	font-size: 1.5rem;
+	margin: 1rem 0;
 }
 
 h4 {
-
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin: 1rem 0;
 }
 
 h5 {
-
+	font-size: 1rem;
+	margin: 1rem 0;
 }
 
 h6 {
-
+	font-size: 1rem;
+	font-weight: normal;
+	margin: 1rem 0;
 }
 
 
@@ -65,20 +74,19 @@ i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	margin: 0 1em;
 }
 
 address {
-	margin: 0 0 1.5em;
+	margin: 0 0 1em;
 }
 
 pre {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
+	margin-bottom: 2em;
 	max-width: 100%;
 	overflow: auto;
-	padding: 0.8em 1em;
+	padding: 1em 1em;
 }
 
 code,
@@ -86,17 +94,10 @@ kbd,
 tt,
 var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 0.875rem;
 }
 
-@media screen and (min-width: 600px) {
-
-	code,
-	kbd,
-	tt,
-	var {
-		font-size: 0.8125rem;
-	}
+p > * {
+	line-height: 1.75; /* fix line-height */
 }
 
 p > code {
@@ -120,4 +121,6 @@ ins {
 
 big {
 	font-size: 125%;
+	line-height: 1;
 }
+

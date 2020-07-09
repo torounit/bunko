@@ -1,0 +1,64 @@
+.posts-navigation,
+.post-navigation,
+.pagination {
+	margin: 4em 0;
+}
+
+.posts-navigation,
+.post-navigation {
+	& .nav-links {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	& .nav-links::before {
+		content: "";
+		display: block;
+		flex-grow: 1;
+	}
+
+	& .nav-previous {
+		order: -1;
+	}
+
+	& .nav-next {
+		order: 1;
+	}
+
+
+}
+
+.pagination {
+	& .nav-links {
+		display: flex;
+		position: relative;
+		justify-content: center;
+	}
+
+	& .page-numbers {
+		flex-grow: 0;
+		width: 2rem;
+		text-align: center;
+		height: 2rem;
+	}
+
+	& .page-numbers.prev,
+	& .page-numbers.next {
+		width: auto;
+		position: absolute;
+		top: 0;
+	}
+
+	& .page-numbers.prev {
+		left: 0;
+	}
+
+	& .page-numbers.next {
+		right: 0;
+	}
+
+}
+
+
+
+

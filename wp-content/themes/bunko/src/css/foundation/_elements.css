@@ -19,7 +19,7 @@ body {
 }
 
 blockquote {
-	padding: 0 20px;
+	padding: 0 2rem;
 	margin: 1em 0;
 }
 
@@ -32,17 +32,17 @@ blockquote > cite {
 hr {
 	border: 0;
 	height: 1px;
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
 }
 
 ul,
 ol {
-	margin: 0 0 1.5em 0;
-	padding-left: 1em;
+	margin: 0 0 1em 0;
+	padding-left: 2em;
 }
 
 ol {
-	padding-left: 1.5em;
+	padding-left: 2em;
 }
 
 ul {
@@ -64,7 +64,7 @@ dt {
 }
 
 dd {
-	margin: 0 1.5em 1.5em;
+	margin: 0 2em 1em;
 }
 
 img {
@@ -83,7 +83,7 @@ figure {
 }
 
 table {
-	margin: 0 0 1.5em;
+	margin: 2em 0;
 	width: 100%;
 	border-collapse: collapse;
 }
@@ -142,3 +142,35 @@ a:hover,
 a:active {
 	outline: 0;
 }
+
+
+hr {
+	border-top: 1px solid currentColor;
+	margin: calc(2em - 1px) 0;
+}
+
+blockquote {
+
+}
+
+button {
+	padding: calc( 1rem - 2px );
+	font-size: 1rem;
+	line-height: 2;
+}
+
+//body {
+//	background-image:
+//		linear-gradient(
+//			transparent 95%,
+//			rgba(0, 0, 0, .2) 5%
+//		),
+//		linear-gradient(
+//			90deg,
+//			transparent 95%,
+//			rgba(0, 0, 0, .2) 5%
+//		);
+//	background-size: 16px 16px;
+//	background-repeat: repeat;
+//	background-position: center top;
+//}

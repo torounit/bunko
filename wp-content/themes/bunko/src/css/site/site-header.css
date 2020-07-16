@@ -1,0 +1,12 @@
+.site-header {
+
+}
+
+.site-header__toggle {
+	position: fixed;
+	top: 4rem;
+	right: 2rem;
+	z-index: 10;
+	padding: calc(1rem - 2px) calc(1rem - 2px);
+	background-color: #fff;
+}

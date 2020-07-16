@@ -1,0 +1,39 @@
+.site-navigation {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+.site-navigation ul {
+	display: none;
+}
+
+.site-navigation ul ul {
+	display: block;
+}
+
+.site-navigation ul[aria-expanded="true"] {
+	display: block;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	overflow: auto;
+}
+
+body.show-navigation {
+	overflow: hidden;
+}
+
+
+.site-navigation li {
+	position: relative;
+}
+
+.site-navigation a {
+	display: block;
+	text-decoration: none;
+}
+

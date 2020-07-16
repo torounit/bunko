@@ -6,12 +6,12 @@
  */
 ( function () {
 
-	const container = document.getElementById( 'site-navigation' );
+	const container = document.querySelector( '.site-navigation' );
 	if ( !container ) {
 		return;
 	}
 
-	const buttons = document.querySelectorAll( '.menu-toggle' );
+	const buttons = document.querySelectorAll( '.site-navigation-toggle' );
 	if ( buttons.length === 0 ) {
 		return;
 	}
@@ -34,10 +34,12 @@
 	const toggleButton = ( element ) => {
 		if ( - 1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
+			document.querySelector( 'body' ).classList.remove( 'show-navigation' );
 			element.setAttribute( 'aria-expanded', 'false' );
 			menu.setAttribute( 'aria-expanded', 'false' );
 		} else {
 			container.className += ' toggled';
+			document.querySelector( 'body' ).classList.add( 'show-navigation' );
 			element.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
 		}

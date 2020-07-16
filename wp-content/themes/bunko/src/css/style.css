@@ -4,7 +4,8 @@
 @import "foundation/_typography.css";
 
 @import "site/site.css";
-@import "site/main-navigation.css";
+@import "site/site-header.css";
+@import "site/site-navigation.css";
 
 @import "module/entry.css";
 @import "module/post-navigation.css";
